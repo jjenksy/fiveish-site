@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-deep: #0B0418;
+  --color-bg-main: #150830;
+  --color-bg-surface: #1E0E3A;
+  --color-bg-card: #261548;
+  --color-gold: #F6C744;
+  --color-cyan: #4DE8E0;
+  --color-magenta: #E84DE0;
+  --color-text-main: #EDE4FF;
+  --color-text-dim: #7A6A9A;
+
+  --font-pixel: var(--font-press-start);
+  --font-body: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-deep);
+  color: var(--color-text-main);
+}
+
+/* Screenshot carousel */
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel > * {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+/* FAQ accordion */
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .faq-arrow {
+  transform: rotate(180deg);
+}
