@@ -31,11 +31,22 @@ body {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-bg-surface) transparent;
+  padding-bottom: 0.75rem;
 }
 
 .carousel::-webkit-scrollbar {
-  display: none;
+  height: 6px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: var(--color-bg-surface);
+  border-radius: 3px;
 }
 
 .carousel > * {

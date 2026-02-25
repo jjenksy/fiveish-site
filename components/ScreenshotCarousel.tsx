@@ -19,21 +19,23 @@ const screenshots = [
 
 export function ScreenshotCarousel() {
   return (
-    <div className="carousel px-4 py-8">
+    <div className="carousel py-8">
+      <div className="shrink-0 w-4" />
       {screenshots.map((s) => (
         <div
           key={s.src}
-          className="relative w-56 aspect-[9/19.5] rounded-2xl overflow-hidden border-2 border-bg-surface shadow-lg shadow-bg-deep/50"
+          className="relative w-44 sm:w-48 aspect-[9/19.5] rounded-2xl overflow-hidden border-2 border-bg-surface shadow-lg shadow-bg-deep/50"
         >
           <Image
             src={s.src}
             alt={s.alt}
             fill
             className="object-cover"
-            sizes="224px"
+            sizes="192px"
           />
         </div>
       ))}
+      <div className="shrink-0 w-4" />
     </div>
   );
 }

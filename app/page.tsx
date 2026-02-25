@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Screenshots */}
-      <section className="max-w-6xl mx-auto">
+      <section>
         <h2 className="font-pixel text-cyan text-sm text-center mb-2">
           Gameplay
         </h2>
