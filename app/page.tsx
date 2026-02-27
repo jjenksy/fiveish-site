@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ScreenshotCarousel } from "@/components/ScreenshotCarousel";
+import { GameplayVideo } from "@/components/GameplayVideo";
 import { FeatureCard } from "@/components/FeatureCard";
 import { CharacterCard } from "@/components/CharacterCard";
 import { characters } from "@/lib/characters";
@@ -60,10 +61,18 @@ export default function Home() {
         </a>
       </section>
 
+      {/* Gameplay Video */}
+      <section className="max-w-sm mx-auto px-4 pb-16">
+        <h2 className="font-pixel text-cyan text-sm text-center mb-4">
+          Gameplay
+        </h2>
+        <GameplayVideo />
+      </section>
+
       {/* Screenshots */}
       <section>
         <h2 className="font-pixel text-cyan text-sm text-center mb-2">
-          Gameplay
+          Screenshots
         </h2>
         <ScreenshotCarousel />
       </section>
