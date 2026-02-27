@@ -18,9 +18,9 @@ const faqs = [
       "Play any minigame to earn marbles. Spend marbles at the prize machine to win unlock tokens, power-ups, and cosmetic items. Each locked minigame shows its marble cost.",
   },
   {
-    question: "Is the game really free with no ads?",
+    question: "Why does the game cost $0.99?",
     answer:
-      "Yes. 5ISH has zero ads, zero tracking, and zero data collection. The game is completely free to download and play. All content can be unlocked through gameplay.",
+      "Instead of filling the game with ads and tracking, we charge a one-time $0.99 so you get the full experience with zero interruptions. No ads, no tracking, no data collection, no in-app purchases. All content can be unlocked through gameplay.",
   },
   {
     question: "Does the game work offline?",
