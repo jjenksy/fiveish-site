@@ -1,7 +1,10 @@
+import Image from "next/image";
 import { ScreenshotCarousel } from "@/components/ScreenshotCarousel";
 import { FeatureCard } from "@/components/FeatureCard";
 import { CharacterCard } from "@/components/CharacterCard";
 import { characters } from "@/lib/characters";
+
+const APP_STORE_URL = "https://apps.apple.com/us/app/fiveish/id6759258843";
 
 const features = [
   {
@@ -42,12 +45,18 @@ export default function Home() {
           12 retro pixel art minigames. Two buttons. Zero ads.
         </p>
         <a
-          href="https://apps.apple.com/app/fiveish"
+          href={APP_STORE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-gold text-bg-deep font-bold px-8 py-3 rounded-xl text-sm hover:brightness-110 transition-all"
+          className="inline-block hover:opacity-80 transition-opacity"
         >
-          Download on the App Store
+          <Image
+            src="/app-store-badge.svg"
+            alt="Download on the App Store"
+            width={180}
+            height={60}
+            priority
+          />
         </a>
       </section>
 
@@ -87,12 +96,17 @@ export default function Home() {
       <section className="text-center py-16 px-4">
         <p className="font-pixel text-magenta text-sm mb-6">Ready to play?</p>
         <a
-          href="https://apps.apple.com/app/fiveish"
+          href={APP_STORE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-gold text-bg-deep font-bold px-8 py-3 rounded-xl text-sm hover:brightness-110 transition-all"
+          className="inline-block hover:opacity-80 transition-opacity"
         >
-          Download on the App Store
+          <Image
+            src="/app-store-badge.svg"
+            alt="Download on the App Store"
+            width={180}
+            height={60}
+          />
         </a>
       </section>
     </>

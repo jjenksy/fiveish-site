@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -16,12 +17,17 @@ export function Header() {
             Support
           </Link>
           <a
-            href="https://apps.apple.com/app/fiveish"
+            href="https://apps.apple.com/us/app/fiveish/id6759258843"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gold text-bg-deep font-semibold px-4 py-2 rounded-lg hover:brightness-110 transition-all text-xs"
+            className="hover:opacity-80 transition-opacity"
           >
-            App Store
+            <Image
+              src="/app-store-badge.svg"
+              alt="Download on the App Store"
+              width={120}
+              height={40}
+            />
           </a>
         </div>
       </nav>

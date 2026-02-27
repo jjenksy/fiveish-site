@@ -25,7 +25,7 @@ const screenshots = [
 
 const info = [
   ["Name", "5ISH"],
-  ["Platform", "iOS (iPhone & iPad)"],
+  ["Platform", "iPhone"],
   ["Price", "Free"],
   ["Genre", "Arcade / Minigame Collection"],
   ["Engine", "SpriteKit (native Swift)"],

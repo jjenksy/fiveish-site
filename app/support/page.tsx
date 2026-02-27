@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "What devices are supported?",
     answer:
-      "5ISH runs on iPhone and iPad with iOS 18.4 or later. It is built natively with SpriteKit for optimal performance.",
+      "5ISH requires an iPhone with iOS 18.4 or later. It is built natively with SpriteKit for optimal performance.",
   },
   {
     question: "How do I change character skins?",
