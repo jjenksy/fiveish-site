@@ -128,10 +128,10 @@ export default function PressKit() {
         <p className="text-text-dim text-sm">
           For press inquiries, please email{" "}
           <a
-            href="mailto:press@fiveish.app"
+            href="mailto:support@fiveish.app"
             className="text-cyan hover:underline"
           >
-            press@fiveish.app
+            support@fiveish.app
           </a>
         </p>
       </section>
